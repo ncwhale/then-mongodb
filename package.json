@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "My first project",
   "main": "index.js",
+  "script":{
+    "test": "mocha",
+    "t": "mocha -R nyan"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/ncwhale/then-mongodb.git"
@@ -10,6 +14,9 @@
   "dependencies": {
     "mongodb-core": "~1.0",
     "when": "^3.6.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
   },
   "author": "Kouga",
   "license": "Apache 2.0",

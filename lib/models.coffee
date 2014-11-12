@@ -10,7 +10,7 @@
       constructor: (options...)->
         # parse options
 
-        # try to connect
+        # try to do something.
         When.promise (resolve, reject, notify)->
 
 
