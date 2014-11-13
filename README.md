@@ -21,11 +21,11 @@ Any suggest are welcome.
 
 ## Mongodb object map
 
-MongoDB | Map | This Module
-------: | :-: | :----------
-Server | 1:1 | Server
-Collection | 1:1 | Model
-Document | 1:1 | Entity
+MongoDB  | This Module
+------:  | :----------
+Server   | Server
+Collection | Model
+Document | Entity
 
 ## Server
 
