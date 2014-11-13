@@ -1,27 +1,42 @@
 {
   "name": "then-mongodb",
-  "version": "0.0.1",
-  "description": "My first project",
+  "version": "0.0.2",
+  "description": "Use Promise/A+ with mongo!",
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "Promises/A+",
+    "promises-aplus",
+    "promise"
+  ],
+  "homepage": "https://github.com/ncwhale/then-mongodb",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
   "main": "index.js",
-  "script":{
+  "scripts": {
     "test": "mocha",
-    "t": "mocha -R nyan"
+    "nyan": "mocha -R nyan"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/ncwhale/then-mongodb.git"
   },
   "dependencies": {
+    "debug": "^2.1.0",
     "mongodb-core": "~1.0",
     "when": "^3.6.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "coffee-script" : "*"
   },
   "author": "Kouga",
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/ncwhale/then-mongodb/issues"
-  },
-  "homepage": "https://github.com/ncwhale/then-mongodb"
+  }
 }
