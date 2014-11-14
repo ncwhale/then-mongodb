@@ -4,24 +4,18 @@
   define (require) ->
     When = require 'when'
     Server = require './lib/server'
-    Models = require './lib/models'
+    Model = require './lib/model'
 
 
     # Helpler function, if connected, will be the default connection used by models.
-    connect_to = (options)->
-      @server?.destroy?() # I need a cup of coffee!
-      @server = new Server options
-      @server.connect()
-
-    destroy_connect = ()->
-      @server?.destroy?() ? When true # I need more coffee!
 
     {
       Server : Server
-      Models : Models
+      Model : Model.Model #WTF!
 
       connect: connect_to
       destroy: destroy_connect
+      load_model: Model.loader
     }
 
 )(if typeof define == 'function' and define.amd then define else (factory) -> module.exports = factory(require);return )

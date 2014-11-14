@@ -194,7 +194,23 @@
           resolve @
         ###
 
+      ###
+      Static functions and verbs here.
+      ###
+
+      ###
+       * Helper functions for just made a default connect and let it go
+      ###
+      @server : null
+      @connect_to : (options)->
+        @server?.destroy?() # I need a cup of coffee!
+        @server = new Server options
+        @server.connect()
+
+      destroy_connect : ()->
+        @server?.destroy?() ? When true # I need more coffee!
+
       # Just for indent.
-      noop: ()->
+      @noop: ()->
 
 )(if typeof define == 'function' and define.amd then define else (factory) -> module.exports = factory(require);return )
